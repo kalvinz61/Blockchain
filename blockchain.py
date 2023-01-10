@@ -11,8 +11,8 @@ from flask import Flask, jsonify
 class Blockchain :
 
 #Building a Blockchain
-  def __init__(self) -> None:
-    self.chain: list = []
+  def __init__(self):
+    self.chain = []
     self.create_block(proof = 1, previous_hash = '0')
 
   def create_block(self, proof, previous_hash):
